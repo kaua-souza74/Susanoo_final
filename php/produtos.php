@@ -103,14 +103,14 @@ if (!function_exists('is_active')) {
                      data-imgs="../assets/img/moletommarrom.png|../assets/img/moletommarrom_2.png" data-sizes="P|M|G|GG|XG"
                      data-longdesc="Moletom Sakura: Interior felpado, capuz com ajuste, bolsos canguru. Estampa temática de cerejeira com tintas ecológicas, ideal para baixas temperaturas.">
                     <div class="card-image"><img src="../assets/img/moletommarrom.png" alt="Moletom Sakura"><div class="card-overlay"><button class="btn-quick-view">Ver Detalhes</button></div></div>
-                    <div class="card-content"><h3>Moletom Sakura</h3><p class="product-desc">Forro macio com estampa de cerejeira</p><p class="price">R$ 249,90</p><button class="btn btn-add-cart">Adicionar ao Carrinho</button></div>
+                    <div class="card-content"><h3>Moletom Sakura</h3><p class="product-desc">Forro macio com estampa de cerejeira</p><p class="price">R$ 129,90</p><button class="btn btn-add-cart">Adicionar ao Carrinho</button></div>
                 </div>
                 <div class="product-card" data-category="moletons"
                      data-name="Moletom Susanoo" data-price="279.90" data-img="../assets/img/moletombege.png"
                      data-imgs="../assets/img/moletombege1.png|../assets/img/moletombege2.png" data-sizes="P|M|G|GG|XG"
                      data-longdesc="Moletom Susanoo: Corte urbano, logo bordado, material durável e resistente a lavagens. Perfeito para compor looks casuais.">
                     <div class="card-image"><img src="../assets/img/moletombege.png" alt="Moletom Susanoo"><div class="card-overlay"><button class="btn-quick-view">Ver Detalhes</button></div></div>
-                    <div class="card-content"><h3>Moletom Susanoo</h3><p class="product-desc">Moletom com capuz e logo bordado</p><p class="price">R$ 279,90</p><button class="btn btn-add-cart">Adicionar ao Carrinho</button></div>
+                    <div class="card-content"><h3>Moletom Susanoo</h3><p class="product-desc">Moletom com capuz e logo bordado</p><p class="price">R$ 139,90</p><button class="btn btn-add-cart">Adicionar ao Carrinho</button></div>
                 </div>
                 <!-- Calças -->
                 <div class="product-card" data-category="calcas"
@@ -118,14 +118,14 @@ if (!function_exists('is_active')) {
                      data-imgs="../assets/img/jortscinza.png|../assets/img/jortscinza_back.png" data-sizes="P|M|G|GG|XG"
                      data-longdesc="Jorts Hakama: Calça com corte inspirado em hakama, bolsos reforçados, tecido com elasticidade leve para conforto. Ideal para looks modernos.">
                     <div class="card-image"><img src="../assets/img/jortscinza.png" alt="Calça Hakama"><div class="card-overlay"><button class="btn-quick-view">Ver Detalhes</button></div></div>
-                    <div class="card-content"><h3>Jorts Hakama</h3><p class="product-desc">Design ousado em trajes unicos</p><p class="price">R$ 199,90</p><button class="btn btn-add-cart">Adicionar ao Carrinho</button></div>
+                    <div class="card-content"><h3>Jorts Hakama</h3><p class="product-desc">Design ousado em trajes unicos</p><p class="price">R$ 119,90</p><button class="btn btn-add-cart">Adicionar ao Carrinho</button></div>
                 </div>
                 <div class="product-card" data-category="calcas"
                      data-name="Calça Cargo" data-price="169.90" data-img="../assets/img/calcamodelofem.png"
                      data-imgs="../assets/img/calcamodelofem.png|../assets/img/calcamodelofem_2.png" data-sizes="P|M|G|GG|XG"
                      data-longdesc="Calça Cargo: Vários bolsos utilitários, cordão interno na cintura, acabamento resistente. Perfeita para uso urbano e funcional.">
                     <div class="card-image"><img src="../assets/img/calcamodelofem.png" alt="Calça Jogger"><div class="card-overlay"><button class="btn-quick-view">Ver Detalhes</button></div></div>
-                    <div class="card-content"><h3>Calça Cargo</h3><p class="product-desc">Conforto urbano com acabamento elástico</p><p class="price">R$ 169,90</p><button class="btn btn-add-cart">Adicionar ao Carrinho</button></div>
+                    <div class="card-content"><h3>Calça Cargo</h3><p class="product-desc">Conforto urbano com acabamento elástico</p><p class="price">R$ 149,90</p><button class="btn btn-add-cart">Adicionar ao Carrinho</button></div>
                 </div>
                 <!-- Acessórios (tamanho Único) -->
                 <div class="product-card" data-category="acessorios"

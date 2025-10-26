@@ -54,28 +54,28 @@
     <main class="collections-page">
          <section id="colecao-essencial" class="banner">
             <div class="banner-content">
-                <a href="produtos.php?colecao=essencial" class="btn btn-outline">Explorar a Coleção</a>
+                <a href="colecao_essencial.php" class="btn btn-outline">Explorar a Coleção</a>
             </div>
         </section>
 
         <!-- Banner 2: Coleção Sublime (classe 'content-right' REMOVIDA) -->
         <section id="colecao-sublime" class="banner">
             <div class="banner-content">
-                <a href="produtos.php?colecao=sublime" class="btn btn-primary">Ver Peças Únicas</a>
+                <a href="colecao_sublime.php" class="btn btn-primary">Ver Peças Únicas</a>
             </div>
         </section>
 
         <!-- Banner 3: Coleção Verão (classe 'content-right' REMOVIDA) -->
         <section id="colecao-verao" class="banner">
             <div class="banner-content">
-                <a href="produtos.php?colecao=verao" class="btn btn-secondary-dark">Descobrir a Leveza</a>
+                <a href="colecao_verao.php" class="btn btn-secondary-dark">Descobrir a Leveza</a>
             </div>
         </section>
-
+ 
         <!-- Banner 4: Coleção Inverno (classe 'content-right' MANTIDA) -->
         <section id="colecao-inverno" class="banner content-right">
             <div class="banner-content">
-                <a href="produtos.php?colecao=inverno" class="btn btn-primary">Enfrente o Frio</a>
+                <a href="colecao_inverno.php" class="btn btn-primary">Enfrente o Frio</a>
             </div>
         </section>
     </main>
