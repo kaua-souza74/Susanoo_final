@@ -34,7 +34,7 @@ if (!function_exists('is_active')) {
         <!-- Menu à direita -->
         <ul class="nav-menu" id="nav-menu">
             <li><a href="../index.php" class="nav-link <?php echo is_active('../index.php', $current); ?>">Home</a></li>
-            <li><a href="../produtos.php" class="nav-link <?php echo is_active('../produtos.php', $current); ?>">Produtos</a></li>
+            <li><a href="produtos.php" class="nav-link <?php echo is_active('../produtos.php', $current); ?>">Produtos</a></li>
             <li><a href="colecoes.php" class="nav-link <?php echo is_active('colecoes.php', $current); ?>">Coleções</a></li>
             <li><a href="sobre.php" class="nav-link <?php echo is_active('sobre.php', $current); ?>">Sobre</a></li>
             <li><a href="contato.php" class="nav-link <?php echo is_active('contato.php', $current); ?>">Contato</a></li>

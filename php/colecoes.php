@@ -1,5 +1,12 @@
-
-
+<?php
+$current = basename($_SERVER['PHP_SELF']);
+if (!function_exists('is_active')) {
+    function is_active($href, $current) {
+        $base = basename(parse_url($href, PHP_URL_PATH));
+        return $base === $current ? 'active' : '';
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -9,10 +16,31 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/colecoes.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <script>(function(){const theme=localStorage.getItem('theme');if(theme==='light'){document.documentElement.classList.add('light-mode');}})();</script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+        (function() {
+            const theme = localStorage.getItem('theme');
+            if(theme === 'light') {
+                document.documentElement.classList.add('light-mode');
+            }
+        })();
+    </script>
+    <style>
+        body, .collections-page { background-color: #000; color: #fff; }
+        .navbar.scrolled { background-color: #111; }
+        .nav-link { color: #fff; }
+        .nav-link.active { color: #f39c12; }
+        .banner { color: #fff; }
+        #colecao-essencial { background-color: #111; }
+        #colecao-sublime { background-color: #222; }
+        #colecao-verao { background-color: #333; }
+        #colecao-inverno { background-color: #444; }
+        footer { background-color: #111; color: #fff; }
+    </style>
 </head>
-<body> <!-- Removida a classe page-colecoes, não é mais necessária -->
-    
+<body>
+
+<!-- Navbar idêntica à página de produtos -->
 <nav class="navbar scrolled" id="navbar">
     <div class="nav-container">
         <div class="nav-search"><input type="text" placeholder="Pesquisar..."></div>
@@ -26,9 +54,8 @@
                 <li><a href="contato.php" class="nav-link <?php echo is_active('contato.php', $current); ?>">Contato</a></li>
             </ul>
             <div class="nav-icons">
-                <!-- NOVO: Dropdown do Perfil -->
                 <div class="profile-dropdown-wrapper">
-                    <a href="login.php" class="nav-icon-link" aria-label="Login"><i class="fas fa-user"></i></a>
+                    <a href="login.php" class="nav-icon-link"><i class="fas fa-user"></i></a>
                     <div class="profile-dropdown-menu">
                         <div class="dropdown-header">
                             <img src="../assets/img/avatar.png" alt="Avatar" class="dropdown-avatar">
@@ -43,55 +70,46 @@
                         </ul>
                     </div>
                 </div>
-                <!-- Fim do Dropdown -->
-                <a href="carrinho.php" class="nav-icon-link" aria-label="Carrinho"><i class="fas fa-shopping-bag"></i></a>
+                <a href="carrinho.php" class="nav-icon-link"><i class="fas fa-shopping-bag"></i></a>
             </div>
         </div>
         <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
     </div>
 </nav>
-    
-    <main class="collections-page">
-         <section id="colecao-essencial" class="banner">
-            <div class="banner-content">
-                <a href="colecao_essencial.php" class="btn btn-outline">Explorar a Coleção</a>
-            </div>
-        </section>
 
-        <!-- Banner 2: Coleção Sublime (classe 'content-right' REMOVIDA) -->
-        <section id="colecao-sublime" class="banner">
-            <div class="banner-content">
-                <a href="colecao_sublime.php" class="btn btn-primary">Ver Peças Únicas</a>
-            </div>
-        </section>
+<!-- Main Content -->
+<main class="collections-page">
+    <section id="colecao-essencial" class="banner">
+        <div class="banner-content">
+            <a href="colecao_essencial.php" class="btn btn-outline">Explorar a Coleção</a>
+        </div>
+    </section>
 
-        <!-- Banner 3: Coleção Verão (classe 'content-right' REMOVIDA) -->
-        <section id="colecao-verao" class="banner">
-            <div class="banner-content">
-                <a href="colecao_verao.php" class="btn btn-secondary-dark">Descobrir a Leveza</a>
-            </div>
-        </section>
- 
-        <!-- Banner 4: Coleção Inverno (classe 'content-right' MANTIDA) -->
-        <section id="colecao-inverno" class="banner content-right">
-            <div class="banner-content">
-                <a href="colecao_inverno.php" class="btn btn-primary">Enfrente o Frio</a>
-            </div>
-        </section>
-    </main>
-    
-    <!-- Footer -->
-    <footer class="footer">
-        <!-- ... seu código do footer ... -->
-         <!-- Footer -->
+    <section id="colecao-sublime" class="banner">
+        <div class="banner-content">
+            <a href="colecao_sublime.php" class="btn btn-primary">Ver Peças Únicas</a>
+        </div>
+    </section>
+
+    <section id="colecao-verao" class="banner">
+        <div class="banner-content">
+            <a href="colecao_verao.php" class="btn btn-secondary-dark">Descobrir a Leveza</a>
+        </div>
+    </section>
+
+    <section id="colecao-inverno" class="banner content-right">
+        <div class="banner-content">
+            <a href="colecao_inverno.php" class="btn btn-primary">Enfrente o Frio</a>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
 <footer class="footer">
     <div class="container">
         <div class="footer-content">
             <div class="footer-section">
-                <div class="footer-logo">
-                    <h3>須佐能乎</h3>
-                    <span>SUSANOO</span>
-                </div>
+                <div class="footer-logo"><h3>須佐能乎</h3><span>SUSANOO</span></div>
                 <p>Desperte seu poder interior com estilo único e elegância oriental.</p>
                 <div class="social-links">
                     <a href="#" class="social-link">Instagram</a>
@@ -99,7 +117,6 @@
                     <a href="#" class="social-link">Twitter</a>
                 </div>
             </div>
-            
             <div class="footer-section">
                 <h4>Navegação</h4>
                 <ul>
@@ -109,7 +126,6 @@
                     <li><a href="sobre.php">Sobre Nós</a></li>
                 </ul>
             </div>
-            
             <div class="footer-section">
                 <h4>Atendimento</h4>
                 <ul>
@@ -119,7 +135,6 @@
                     <li><a href="#">Política de Privacidade</a></li>
                 </ul>
             </div>
-            
             <div class="footer-section">
                 <h4>Newsletter</h4>
                 <p>Receba novidades e ofertas exclusivas</p>
@@ -129,17 +144,14 @@
                 </form>
             </div>
         </div>
-        
         <div class="footer-bottom">
-            <p>&copy; 2025 Susanoo. Todos os direitos reservados por Davi de Assis, Kauã souza, Lucas Limas e Vinicius Queiroz.</p>
+            <p>&copy; <?php echo date('Y'); ?> Susanoo. Todos os direitos reservados.</p>
         </div>
     </div>
 </footer>
-    </footer>
 
-    <button id="backToTop" class="back-to-top"><span>↑</span></button>
-    <script src="../js/script.js"></script>
-    <script src=../js/theme.js></script> <!-- ou ../js/theme.js para páginas internas -->
-    </main>
+<button id="backToTop" class="back-to-top"><span>↑</span></button>
+
+<script src="../js/script.js"></script>
 </body>
 </html>
