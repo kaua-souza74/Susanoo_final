@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -84,14 +83,13 @@ if (!function_exists('is_active')) {
             </div>
             <div class="products-grid">
                 
-                    
 <!-- PRODUTO 1 CORRIGIDO -->
 <div class="product-card" data-category="camisas"
      data-name="Camisa Susanoo - Branca" data-price="299.90" data-img="../assets/img/costafoto.png"
      data-imgs="../assets/img/costafoto.png" data-sizes="P|M|G|GG" 
      data-longdesc="Uma camisa branca elegante com detalhes da cultura japonesa, perfeita para qualquer ocasião.">
     <div class="card-image"><img src="assets/img/costafoto.png" alt="Camisa Branca"><div class="card-overlay"><button class="btn-quick-view">Ver Detalhes</button></div></div>
-    <div class="card-content"><h3>Camisa Susanoo - Branca</h3><p class="product-desc">Estilo e cultura japonesa</p><p class="price">R$ 299,90</p><button class="btn-add-cart">Adicionar ao Carrinho</button></div>
+    <div class="card-content"><h3>Camisa Susanoo - Branca</h3><p class="product-desc">Estilo e cultura japonesa</p><p class="price">R$ 299,90</p><button class="btn btn-add-cart">Adicionar ao Carrinho</button></div>
 </div>
 
 <!-- PRODUTO 2 CORRIGIDO -->
@@ -112,9 +110,10 @@ if (!function_exists('is_active')) {
     <div class="card-content"><h3>Acessórios</h3><p class="product-desc">Cerimônia tradicional japonesa</p><p class="price">R$ 459,90</p><button class="btn btn-add-cart">Adicionar ao Carrinho</button></div>
 </div>
 
-  
-            <div class="cta-section">
-                <a href="php/produtos.php" class="btn btn-outline">Ver Todos os Produtos</a>
+                <!-- Botão "Ver Todos" movido para dentro da grade para garantir centralização -->
+                <div class="cta-section">
+                    <a href="php/produtos.php" class="btn btn-outline">Ver Todos os Produtos</a>
+                </div>
             </div>
         </div>
     </section>
@@ -127,9 +126,9 @@ if (!function_exists('is_active')) {
                 <p class="section-subtitle">Linhas exclusivas inspiradas na cultura japonesa</p>
             </div>
             <div class="collections-grid">
-                <div class="collection-card large"><img src="assets/img/invernocolecao.png" alt="Coleção Tempestade"><div class="collection-overlay"><div class="collection-content"><h3>Coleção de Inverno</h3><p>Peças inspiradas no poder de Susanoo</p><a href="php/colecoes.php" class="btn btn-outline">Explorar</a></div></div></div>
+                <div class="collection-card large"><img src="assets/img/colecaorosa.png" alt="Coleção Tempestade"><div class="collection-overlay"><div class="collection-content"><h3>Linha de Inverno</h3><p>Esquente-se com estilo</p><a href="php/colecoes.php" class="btn btn-outline">Explorar</a></div></div></div>
                 <div class="collection-card"><img src="assets/img/vermelhoroupa.png" alt="Linha Dragão"><div class="collection-overlay"><div class="collection-content"><h3>Linha de Verão</h3><p>Força e elegância</p><a href="php/colecoes.php" class="btn btn-outline">Ver Mais</a></div></div></div>
-                <div class="collection-card"><img src="assets/img/colecaorosa.png" alt="Sakura"><div class="collection-overlay"><div class="collection-content"><h3>Sakura</h3><p>Delicadeza oriental</p><a href="php/colecoes.php" class="btn btn-outline">Descobrir</a></div></div></div>
+                <div class="collection-card"><img src="assets/img/colecaorosa.png" alt="Sakura"><div class="collection-overlay"><div class="collection-content"><h3>Coleção Sublime</h3><p>Delicadeza oriental</p><a href="php/colecoes.php" class="btn btn-outline">Descobrir</a></div></div></div>
             </div>
         </div>
     </section>
@@ -180,11 +179,11 @@ if (!function_exists('is_active')) {
         </div>
     </footer>
 
-    <!-- Back to Top Button -->
+    
     <button id="backToTop" class="back-to-top"><span>↑</span></button>
 
     <script src="js/cart.js"></script>
     <script src="js/script.js"></script>
-    <script src="js/theme.js"></script> <!-- ou ../js/theme.js para páginas internas -->
+    <script src="js/theme.js"></script> 
 </body>
 </html>
